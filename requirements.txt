@@ -6,4 +6,5 @@ pypdf
 python-dotenv
 langchain-community
 chroma
--e .
+fastapi 
+uvicorn
