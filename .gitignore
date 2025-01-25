@@ -2,4 +2,4 @@
 llama-2-7b-chat.ggmlv3.q4_0.bin
 6faeeb4c-d90b-48eb-9e15-9005915712dd
 chroma.sqlite3
-experiment/mediquery_experiment.ipynb
+experiment/mediquery.ipynb
