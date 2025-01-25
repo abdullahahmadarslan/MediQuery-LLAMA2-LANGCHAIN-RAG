@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+MediQuery.egg-info/PKG-INFO
+MediQuery.egg-info/SOURCES.txt
+MediQuery.egg-info/dependency_links.txt
+MediQuery.egg-info/top_level.txt
+src/__init__.py
+src/prompt.py
+src/utils.py
