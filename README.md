@@ -6,6 +6,7 @@ MediQuery is a medical chatbot application that leverages cutting-edge natural l
 ## Features
 - **Conversational Medical Support**: Users can ask medical-related questions and receive informative, AI-generated responses.
 - **Retrieval-Augmented Generation (RAG)**: Combines language model capabilities with a retrieval-based system for accurate and context-aware answers.
+- **LangChain Integration**: Simplifies and streamlines the interaction between LLaMA 2, embeddings, and document retrieval.
 - **FastAPI Backend**: Handles chatbot interactions and serves the frontend.
 - **Clean and Responsive Interface**: HTML and CSS-based UI for a user-friendly experience.
 - **Embeddings and Vector Search**: Uses Chroma for semantic search, ensuring relevant information is retrieved efficiently.
@@ -16,6 +17,7 @@ MediQuery is a medical chatbot application that leverages cutting-edge natural l
 - **Language Model**: LLaMA 2 (via `CTransformers`)
 - **Embeddings Model**: `sentence-transformers/all-MiniLM-L6-v2`
 - **Database**: Chroma (for document search and embeddings)
+- **Integration Framework**: LangChain
 - **Deployment**: Uvicorn
 
 ---
@@ -99,6 +101,7 @@ Access the chatbot at: [http://127.0.0.1:8080/](http://127.0.0.1:8080/)
    - Embeddings are downloaded via the `download_hugging_face_embeddings` function.
    - Chroma database performs semantic search to retrieve relevant documents.
    - The LLaMA model generates context-aware answers.
+   - LangChain coordinates the pipeline, ensuring smooth integration of components.
 4. **Response**:
    - The bot's response is displayed in the chat interface.
 
@@ -115,7 +118,10 @@ MediQuery employs `sentence-transformers/all-MiniLM-L6-v2` to generate embedding
 ### 3. **Chroma**
 Chroma is used as a vector database to store and retrieve documents based on their embeddings.
 
-### 4. **Prompt Engineering**
+### 4. **LangChain**
+LangChain acts as the framework to integrate the LLaMA model, embeddings, and Chroma, ensuring smooth execution of the RAG pipeline.
+
+### 5. **Prompt Engineering**
 A custom prompt template ensures high-quality responses that are contextual and relevant to the user’s medical queries.
 
 ---
@@ -145,6 +151,4 @@ This project is licensed under the MIT License.
 - LangChain for modular AI chains.
 - Meta for the LLaMA model.
 - FastAPI for a modern web framework.
-
-
 
